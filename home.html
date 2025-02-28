@@ -5,12 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form action="">
-        <div>
-            <h2>Log in</h2>
-            <input type="text" name="username">
-            <input type="password" name="pwd"><br><br>
+<style >
+    .box{
+        background-color:bisque;
+        border-radius: 30px;
+        height: auto;
+        width: 350px;
+        border: 2px solid black;
+    }
+    body{
+        text-align: center;
+        padding-left: 40%;
+        padding-right: 40%;
+        padding-top: 9%;
+    }
+</style>
+<body  >
+    <form action="" method="post">
+        <div class="box">
+            <h2>Registration form </h2>
+            <label for="user">Username:</label>
+            <input id="user"  type="text" name="username" placeholder="Enter username"  >
+            <br>
+            <br>
+            <label for="fname">FirstName:</label>
+            <input type="password" id="fname" placeholder="Enter First Name"  required><br><br>
+            <label for="lname">LastName:</label>
+            <input type="password" id="lname" placeholder="Enter Last Name"  ><br><br>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gender" value="Male">
+            <label>Male</label>
+            <input type="radio" name="gender" value="Female">
+            <label>Female</label>
+            <br><br>
+            <label for="pass">Password:</label>
+            
+            <input type="password"   placeholder="Enter password"   id="pass" required><br><br>
+            <label for="cpass">Confirm password:</label>
+            <input type="password" name="pwd" placeholder="Confirm your  password"  required id="cpass"><br><br>
+            
             <input type="reset">
             <input type="submit">
         </div>
